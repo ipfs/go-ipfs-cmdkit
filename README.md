@@ -7,7 +7,7 @@
 
 > tools used by go-ipfs-cmds and go-ipfs/commands
 
-cmdkit offers some type, functions and values that are shared between go-ipfs/commands and it's rewrite go-ipfs-cmds.
+cmdkit offers some types, functions and values that are shared between go-ipfs/commands and its rewrite go-ipfs-cmds.
 
 ## Documentation
 
