@@ -30,7 +30,8 @@ const (
 )
 
 // options that are used by this package
-var OptionEncodingType = StringOption(EncLong, EncShort, "The encoding type the output should be encoded with (json, xml, or text)").WithCanonicalName(EncLong)
+// TODO move to go-ipfs/...
+var OptionEncodingType = StringOption(EncLong, EncShort, "The encoding type the output should be encoded with (json, xml, or text)").WithCanonicalName(EncShort)
 var OptionRecursivePath = BoolOption(RecLong, RecShort, "Add directory paths recursively").WithDefault(false).WithCanonicalName(RecLong)
 var OptionStreamChannels = BoolOption(ChanOpt, "Stream channel output")
 var OptionTimeout = StringOption(TimeoutOpt, "set a global timeout on the command")
