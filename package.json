@@ -24,7 +24,7 @@
   "language": "go",
   "license": "MIT",
   "name": "go-ipfs-cmdkit",
-  "version": "0.3.3",
-  "releaseCmd": "git commit -a -m \"gx publish $VERSION\""
+  "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
+  "version": "0.3.4"
 }
 
