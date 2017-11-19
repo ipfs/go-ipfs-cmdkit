@@ -12,6 +12,12 @@
       "hash": "QmWbjfz3u6HkAdPh34dgPchGbQjob6LXLhAeCGii2TX69n",
       "name": "go-ipfs-util",
       "version": "1.2.4"
+    },
+    {
+      "author": "The Go Authors",
+      "hash": "QmPXvegq26x982cQjSfbTvSzZXn7GiaMwhhVPHkeTEhrPT",
+      "name": "sys",
+      "version": "0.1.0"
     }
   ],
   "gxVersion": "0.10.0",
