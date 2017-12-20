@@ -8,12 +8,6 @@
   },
   "gxDependencies": [
     {
-      "author": "whyrusleeping",
-      "hash": "QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3",
-      "name": "go-ipfs-util",
-      "version": "1.2.6"
-    },
-    {
       "author": "The Go Authors",
       "hash": "QmPXvegq26x982cQjSfbTvSzZXn7GiaMwhhVPHkeTEhrPT",
       "name": "sys",
