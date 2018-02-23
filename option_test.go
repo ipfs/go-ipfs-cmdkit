@@ -32,6 +32,17 @@ func TestOptionValueExtractWrongType(t *testing.T) {
 	}
 }
 
+func TestOptionValueExtractEquivalentType(t *testing.T) {
+	optval := &OptionValue{Value: int(5), ValueFound: true}
+	uintval, _, err := optval.Uint()
+	if err != nil {
+		t.Fatalf("Int should be equivalent to uint but got %s", err)
+	}
+	if uintval != 5 {
+		t.Fatalf("Expected 5 but got %d", uintval)
+	}
+}
+
 func TestLackOfDescriptionOfOptionDoesNotPanic(t *testing.T) {
 	opt := BoolOption("a", "")
 	opt.Description()
