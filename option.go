@@ -204,7 +204,12 @@ func (ov *OptionValue) Uint() (value uint, found bool, err error) {
 	}
 	val, ok := ov.Value.(uint)
 	if !ok {
-		err = fmt.Errorf("expected type %T, got %T", val, ov.Value)
+		intval, ok := ov.Value.(int)
+		if ok && intval >= 0 {
+			val = uint(intval)
+		} else {
+			err = fmt.Errorf("expected type %T, got %T", val, ov.Value)
+		}
 	}
 	return val, ov.ValueFound, err
 }
