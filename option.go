@@ -17,6 +17,7 @@ const (
 	Uint64  = reflect.Uint64
 	Float   = reflect.Float64
 	String  = reflect.String
+	Strings = reflect.Array
 )
 
 type OptMap map[string]interface{}
@@ -117,6 +118,9 @@ var converters = map[reflect.Kind]converter{
 	String: func(v string) (interface{}, error) {
 		return v, nil
 	},
+	Strings: func(v string) (interface{}, error) {
+		return v, nil
+	},
 }
 
 func (o *option) Parse(v string) (interface{}, error) {
@@ -179,6 +183,9 @@ func FloatOption(names ...string) Option {
 }
 func StringOption(names ...string) Option {
 	return NewOption(String, names...)
+}
+func StringsOption(names ...string) Option {
+	return NewOption(Strings, names...)
 }
 
 type OptionValue struct {
@@ -269,6 +276,17 @@ func (ov *OptionValue) String() (value string, found bool, err error) {
 		return "", false, nil
 	}
 	val, ok := ov.Value.(string)
+	if !ok {
+		err = fmt.Errorf("expected type %T, got %T", val, ov.Value)
+	}
+	return val, ov.ValueFound, err
+}
+
+func (ov *OptionValue) Strings() (value []string, found bool, err error) {
+	if ov == nil || !ov.ValueFound && ov.Value == nil {
+		return nil, false, nil
+	}
+	val, ok := ov.Value.([]string)
 	if !ok {
 		err = fmt.Errorf("expected type %T, got %T", val, ov.Value)
 	}
