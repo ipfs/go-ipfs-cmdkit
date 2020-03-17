@@ -9,10 +9,14 @@ github.com/ipfs/go-ipfs-cmds v0.1.0 h1:0CEde9EcxByej8+L6d1PST57J4ambRPyCTjLG5Ymo
 github.com/ipfs/go-ipfs-cmds v0.1.0/go.mod h1:TiK4e7/V31tuEb8YWDF8lN3qrnDH+BS7ZqWIeYJlAs8=
 github.com/ipfs/go-ipfs-cmds v0.1.1 h1:H9/BLf5rcsULHMj/x8gC0e5o+raYhqk1OQsfzbGMNM4=
 github.com/ipfs/go-ipfs-cmds v0.1.1/go.mod h1:k1zMXcOLtljA9iAnZHddbH69yVm5+weRL0snmMD/rK0=
+github.com/ipfs/go-ipfs-cmds v0.1.2 h1:02FLzTA9jYRle/xdMWYwGwxu3gzC3GhPUaz35dH+FrY=
+github.com/ipfs/go-ipfs-cmds v0.1.2/go.mod h1:a9LyFOtQCnVc3BvbAgW+GrMXEuN29aLCNi3Wk0IM8wo=
 github.com/ipfs/go-ipfs-files v0.0.2 h1:fEEjF4H+1t8SFOHqUGp0KqcwgIRlbD2bu8CAS2sIggE=
 github.com/ipfs/go-ipfs-files v0.0.2/go.mod h1:INEFm0LL2LWXBhNJ2PMIIb2w45hpXgPjNoE7yA8Y1d4=
 github.com/ipfs/go-ipfs-files v0.0.4 h1:WzRCivcybUQch/Qh6v8LBRhKtRsjnwyiuOV09mK7mrE=
 github.com/ipfs/go-ipfs-files v0.0.4/go.mod h1:INEFm0LL2LWXBhNJ2PMIIb2w45hpXgPjNoE7yA8Y1d4=
+github.com/ipfs/go-ipfs-files v0.0.6 h1:sMRtPiSmDrTA2FEiFTtk1vWgO2Dkg7bxXKJ+s8/cDAc=
+github.com/ipfs/go-ipfs-files v0.0.6/go.mod h1:lVYE6sgAdtZN5825beJjSAHibw7WOBNPDWz5LaJeukg=
 github.com/ipfs/go-log v0.0.1 h1:9XTUN/rW64BCG1YhPK9Hoy3q8nr4gOmHHBpgFdfw6Lc=
 github.com/ipfs/go-log v0.0.1/go.mod h1:kL1d2/hzSpI0thNYjiKfjanbVNU+IIGA/WnNESY9leM=
 github.com/kisielk/errcheck v1.1.0/go.mod h1:EZBBE59ingxPouuu3KfxchcWSUPOHkagtvWXihfKN4Q=
